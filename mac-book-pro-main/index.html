@@ -16,9 +16,11 @@
     <main>
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-2 bg-green-100">
+          <!-- left side image -->
           <div class="w-9/12 p-5">
             <img src="images/mac.png" />
           </div>
+          <!-- right side text  -->
           <div class="pt-10 px-3 bg-green-200">
             <div>
               <h1>coustomize your blue 24-inch iMac with Apple M1 chip.</h1>
@@ -29,7 +31,7 @@
                 Magic Mouse Magic KeyBoard - US English
               </p>
             </div>
-
+            <!-- first two button -->
             <h2>Memory</h2>
             <button id="memory8gb" class="button-design">
               8GB unified memory
@@ -37,7 +39,8 @@
             <button id="memory16gb" class="button-design">
               16GB unified memory
             </button>
-            <br />
+            <br /><br />
+            <!-- second three button -->
             <h2>storage</h2>
             <button id="storage256" class="button-design">
               256GB SSD storage
@@ -48,7 +51,8 @@
             <button id="storage1T" class="button-design">
               1TB SSD storage
             </button>
-            <br />
+            <br /><br />
+            <!-- last two button -->
             <h2>Chose your delivery option</h2>
             <button id="freedelivary" class="button-design">
               Friday, Aug 25 FREE prime Delivery
@@ -56,28 +60,48 @@
             <button id="paiddelivary" class="button-design">
               Friday, Aug 21 Delivery charge $20
             </button>
-
+            <br />
+            <!--Total price and delivery charge area  -->
             <div class="font-sizeh4">
               <h4 style="color: green">
-                Best Price: $ <span id="fixedprice">1299</span>
+                Best Price &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp: $
+                <span id="fixedprice">1299</span>
               </h4>
-              <h4>Extra Memory Coast: $ <span id="memorycoast">0</span></h4>
-              <h4>Extra Storage Coast: $ <span id="storegecoast">0</span></h4>
-              <h4>Delivery Charge: $ <span id="deliverycoast">0</span></h4>
+              <h4>
+                Extra Memory Coast &nbsp: $ <span id="memorycoast">0</span>
+              </h4>
+              <h4>
+                Extra Storage Coast &nbsp &nbsp: $
+                <span id="storegecoast">0</span>
+              </h4>
+              <h4>
+                Delivery Charge &nbsp &nbsp &nbsp &nbsp &nbsp: $
+                <span id="deliverycoast">0</span>
+              </h4>
               <hr />
-
               <h4 style="text-align: center; font-size: 25px">
-                Total Price:$ <span id="total">1299</span>
+                Total Price: &nbsp $<span id="total">1299</span>
               </h4>
+              <br />
             </div>
-
             <form>
-               <label for="html">add promo code</label>
-              <input id="promocode" class="border" type="text" />
+               <label for="add promo code" class="font-medium"
+                >add promo code</label
+              >
+              <input id="promocode" class="border border-2 mx-4" type="text" />
             </form>
-            <button id="apply" class="button-design">apply</button>
-            <h4 style="text-align: center; font-weight: 600; font-size: 30px">
-              Final Price:$<span id="final">1299</span>
+            <button id="apply" class="apply-button">apply now</button>
+            <br /><br />
+            <h4
+              style="
+                text-align: center;
+                font-weight: 700;
+                font-size: 25px;
+                margin-bottom: 200px;
+              "
+            >
+              Final Price After discount: &nbsp $<span id="final">1299</span>
             </h4>
           </div>
         </div>

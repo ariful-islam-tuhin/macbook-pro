@@ -26,4 +26,22 @@ h2 {
 form {
   color: red;
   font-size: 20px;
+  display: inline;
+}
+.apply-button {
+  color: red;
+  font-size: large;
+  font-weight: 600;
+  padding: 3px 30px;
+  background-color: rgb(224, 224, 224);
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.apply-button:hover {
+  background-color: skyblue;
+  color: black;
+}
+hr {
+  border: 3px solid rgb(0, 0, 0);
+  background-color: black;
 }
