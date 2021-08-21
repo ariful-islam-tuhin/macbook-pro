@@ -19,8 +19,8 @@ const total = document.getElementById("total");
 //
 const promocode = document.getElementById("promocode");
 const apply = document.getElementById("apply");
-const final = document.getElementById("final");
-//
+const finalTeaxt = document.getElementById("final");
+// update all
 function updateAll() {
   var a = Number(memorycoast.innerText);
   var b = Number(storegecoast.innerText);
@@ -30,25 +30,8 @@ function updateAll() {
   var d = Number(fixedprice.innerText);
   var abcd = a + b + c + d;
   total.innerText = abcd;
+  finalTeaxt.innerText = total.innerText;
 }
-
-// ============discount============//
-
-// ******************=================================================================//
-/*  var finalPrice = total * 20;
- var ans = finalPrice / 100;
-
-apply.addEventListener("click", function () {
-     var promocodeInput = promocode;
-    var promoCoding = promocodeInput.value;
-
-  if (promoCoding == "stevkaku") {
-    finalPrice.innerText = 1200;
-    lastPrice.innerText = lastPrice;
-  }
-  updateAll();
-}); */
-// ******************================================================================//
 
 // add eventListener
 memory8.addEventListener("click", function () {
@@ -81,9 +64,11 @@ paiddelivary.addEventListener("click", function () {
   deliverycoast.innerText = "20";
   updateAll();
 });
-//
+// discount with promocode
 apply.addEventListener("click", function () {
-  final.innerText = 1200;
+  var promo = promocode.value;
 
-  updateAll();
+  if (promo == "stevekaku") {
+    finalTeaxt.innerText = total.innerText - total.innerText * 0.2;
+  }
 });
