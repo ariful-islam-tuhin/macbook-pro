@@ -1,0 +1,28 @@
+h1 {
+  font-size: 45px;
+  line-height: 120%;
+  margin-bottom: 60px;
+}
+h2 {
+  font-weight: 700;
+  padding-top: 10px;
+  font-size: large;
+}
+.font-sizeh4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.button-design {
+  padding: 2px;
+  border: 2px solid green;
+  margin-right: 10px;
+}
+.button-design:hover {
+  color: white;
+  background-color: black;
+}
+form {
+  color: red;
+  font-size: 30px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2">
+          <div class="w-full p-5">
+            <img src="images/mac.png" />
+          </div>
+          <div class="mt-10 px-3">
+            <div>
+              <h1>coustomize your blue 24-inch iMac with Apple M1 chip.</h1>
+              <p class="pb-4">
+                Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                efficiency cores, 7-core GPU, and 16-core Netural Engine 8GB
+                uni8fied memory 256GB SSd storage Two Thunderbolt/USB 4 ports
+                Magic Mouse Magic KeyBoard - US English
+              </p>
+            </div>
+
+            <h2>Memory</h2>
+            <button id="memory8gb" class="button-design">
+              8GB unified memory
+            </button>
+            <button id="memory16gb" class="button-design">
+              16GB unified memory
+            </button>
+            <br />
+            <h2>storage</h2>
+            <button id="storage256" class="button-design">
+              256GB SSD storage
+            </button>
+            <button id="storage512" class="button-design">
+              512GB SSD storage
+            </button>
+            <button id="storage1T" class="button-design">
+              1TB SSD storage
+            </button>
+            <br />
+            <h2>Chose your delivery option</h2>
+            <button id="freedelivary" class="button-design">
+              Friday, Aug 25 FREE prime Delivery
+            </button>
+            <button id="paiddelivary" class="button-design">
+              Friday, Aug 21 Delivery charge $20
+            </button>
+
+            <div class="font-sizeh4">
+              <h4 style="color: green">
+                Best Price: $ <span id="fixedprice">1299</span>
+              </h4>
+              <h4>Extra Memory Coast: $ <span id="memorycoast">0</span></h4>
+              <h4>Extra Storage Coast: $ <span id="storegecoast">0</span></h4>
+              <h4>Delivery Charge: $ <span id="deliverycoast">0</span></h4>
+              <hr />
+
+              <h4 style="text-align: center; font-size: 25px">
+                Total Price:$ <span id="total">1299</span>
+              </h4>
+            </div>
+
+            <form>
+                  <label for="html">add promo code</label>
+              <input id="promocode" class="border" type="text" />
+              <button id="apply" class="button-design">apply</button>
+            </form>
+            <h4 style="text-align: center; font-weight: 600; font-size: 30px">
+              Final Price:$ <span id="final">1299</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="mac.js"></script>
+  </body>
+</html>
